@@ -14,7 +14,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
+    public void resetForAllScore(View v){
+        totalscorefora=0;
+        totalscoreforb=0;
+        displayForTeamA(0);
+        displayForTeamB(0);
+    }
     public void displayForTeamA(int score){
       TextView tx=(TextView) findViewById(R.id.score_tag);
         totalscorefora+=score;
